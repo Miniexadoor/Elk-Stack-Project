@@ -57,21 +57,25 @@ JumpBoxProvisioner 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
-
+| Name               | Publicly Accessible | Allowed IP Addresses |   |   |
+|--------------------|---------------------|----------------------|:-:|---|
+| JumpBoxProvisioner | Yes/No              | 73.135.54.243        |   |   |
+| Elk-Server         | No                  | 10.0.0.4             |   |   |
+| Web-1              | No                  | 10.0.0.4             |   |   |
+| Web-2              | No                  | 10.0.0.4             |   |   |
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+
+What is the main advantage of automating configuration with Ansible?
+It allows for the configuration and usage of new virtual machines with yml playbooks allowing one to access those machines from a remote desktop.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- SSH in the jumpboxprovisioner
+- Start and attach the ansible docker "laughing_mcclintock
+- Create the install-elk.yml in the /etc/ansible directory
+- Run the install-elk.yml file in that directory
+- SSH into Elk-Server to check if it is running.
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
@@ -100,4 +104,3 @@ _TODO: Answer the following questions to fill in the blanks:_
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
-_As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
