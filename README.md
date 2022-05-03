@@ -30,28 +30,30 @@ What is the advantage of a jump box?
 It creates a secure point of connection to the rest of the servers that can only be accessed by the admin.
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+What does Filebeat watch for?
+It monitors log files and indexes them in logstash
+
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     | Server   |            | Linux            |
-| TODO     | Server   |            | Linux            |
-| TODO     | Server   |            | Linux            |
+|        Name        | Function | IP Address | Operating System |   |
+|:------------------:|:--------:|:----------:|:----------------:|---|
+| JumpBoxProvisioner | Gateway  | 10.0.0.4   | Linux            |   |
+| Elk-Server         | Server   | 10.1.0.4   | Linux            |   |
+| Web-1              | Server   | 10.0.0.5   | Linux            |   |
+| Web-2              | Server   | 10.0.0.6   | Linux            |   |
 
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the JumpBoxProvisioner machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+73.135.54.243
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by JumpBoxProvisioner.
+Which machine did you allow to access your ELK VM? What was its IP address?_
+JumpBoxProvisioner 10.0.0.4
 
 A summary of the access policies in place can be found in the table below.
 
