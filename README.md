@@ -6,7 +6,7 @@ https://github.com/Miniexadoor/Elk-Stack-Project/blob/main/Project%201%20diagram
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the Elk-Stack Project file may be used to install only certain pieces of it, such as Filebeat.
 
-  - _TODO: Enter the playbook file._
+  https://github.com/Miniexadoor/Elk-Stack-Project/blob/main/Filebeat_playbook.yml
 
 This document contains the following details:
 - Description of the Topologu
